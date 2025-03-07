@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eu te amo 🌹</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Reprodutor do Spotify -->
+        <section class="spotify-player">
+            <iframe src="https://open.spotify.com/embed/track/1mSxbLW7fKABfeY4lGpg0E" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </section>
+
+        <!-- Carrossel de Fotos (6 fotos) -->
+        <section class="carousel">
+            <div class="photo active">
+                <img src="imagens/foto1.jpg" alt="Foto 1">
+            </div>
+            <div class="photo">
+                <img src="imagens/foto2.jpg" alt="Foto 2">
+            </div>
+            <div class="photo">
+                <img src="imagens/foto3.jpg" alt="Foto 3">
+            </div>
+            <div class="photo">
+                <img src="imagens/foto4.jpg" alt="Foto 4">
+            </div>
+            <div class="photo">
+                <img src="imagens/foto5.jpg" alt="Foto 5">
+            </div>
+            <div class="photo">
+                <img src="imagens/foto6.jpg" alt="Foto 6">
+            </div>
+            <button class="prev" onclick="prevPhoto()">&#10094;</button>
+            <button class="next" onclick="nextPhoto()">&#10095;</button>
+        </section>
+
+        <!-- Mensagem -->
+        <section class="message">
+            <h2>Feliz Dia das Mulheres, meu amor!</h2>
+            <!-- Contador Personalizado -->
+            <div class="countdown">
+                <p>Tempo desde o início da nossa jornada:</p>
+                <div id="timer">
+                    <span id="years">00</span> anos,
+                    <span id="months">00</span> meses,
+                    <span id="days">00</span> dias,
+                    <span id="hours">00</span> horas,
+                    <span id="minutes">00</span> minutos e
+                    <span id="seconds">00</span> segundos
+                </div>
+            </div>
+
+            <!-- Divisória -->
+            <hr class="divider">
+
+            <p>
+                Hoje é um dia especial para celebrar tudo o que você é: forte, maravilhosa, sensível, inteligente e inspiradora.
+            </p>
+            <p>
+                Sou grato por ter você ao meu lado, por todo o carinho e amor que você me dá.
+            </p>
+            <p>
+                Que seu brilho nunca se apague e que você continue conquistando o mundo do jeitinho único que só você sabe.
+            </p>
+            <p>Te amo muito, minha flor 🌹!</p>
+        </section>
+
+        <!-- Rodapé -->
+        <footer>
+            <p>Feito com ❤️ por Seu príncipe</p>
+        </footer>
+    </div>
+
+    <!-- Div para os corações caindo (no fundo da página) -->
+    <div id="hearts-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

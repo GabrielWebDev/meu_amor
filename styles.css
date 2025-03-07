@@ -1,0 +1,136 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Texto branco */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+}
+
+/* Reprodutor do Spotify */
+.spotify-player {
+    margin-bottom: 20px;
+}
+
+/* Carrossel de Fotos */
+.carousel {
+    position: relative;
+    max-width: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.photo {
+    display: none;
+    width: 100%;
+    height: 400px; /* Altura fixa para todas as fotos */
+    object-fit: cover; /* Garante que a foto cubra o espaço sem distorcer */
+    border-radius: 10px;
+}
+
+.photo.active {
+    display: block;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantém a proporção da imagem */
+    border-radius: 10px;
+}
+
+/* Botões de navegação do carrossel */
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+/* Mensagem e contador */
+.message {
+    background-color: #1a1a1a; /* Fundo cinza escuro */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.message h2 {
+    color: #e91e63; /* Rosa para destacar */
+}
+
+.message p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #fff; /* Texto branco */
+}
+
+/* Contador */
+.countdown {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+#timer {
+    font-weight: bold;
+    color: #e91e63; /* Rosa para destacar */
+}
+
+/* Divisória */
+.divider {
+    border: 0;
+    height: 1px;
+    background: #e91e63; /* Cor rosa para combinar com o tema */
+    margin: 20px 0; /* Espaçamento acima e abaixo da linha */
+    opacity: 0.5; /* Transparência para suavizar */
+}
+
+/* Rodapé */
+footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #777; /* Texto cinza claro */
+}
+
+/* Corações caindo */
+.heart {
+    position: fixed; /* Fixo para que os corações caiam em relação à janela */
+    top: -50px; /* Começa acima da tela */
+    color: #e91e63; /* Coração vermelho */
+    font-size: 24px;
+    user-select: none;
+    pointer-events: none;
+    animation: fall linear infinite;
+    opacity: 0.7; /* Transparência */
+    z-index: -1; /* Coloca os corações atrás do conteúdo */
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh); /* Cai até o final da tela */
+    }
+}
