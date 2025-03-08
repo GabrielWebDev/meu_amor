@@ -46,28 +46,6 @@ body {
     border-radius: 10px;
 }
 
-/* Botões de navegação do carrossel */
-button.prev, button.next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 50%;
-    font-size: 18px;
-}
-
-button.prev {
-    left: 10px;
-}
-
-button.next {
-    right: 10px;
-}
-
 /* Mensagem e contador */
 .message {
     background-color: #1a1a1a; /* Fundo cinza escuro */
