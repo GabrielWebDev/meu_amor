@@ -87,11 +87,6 @@ function nextPhoto() {
     showPhoto(currentPhotoIndex);
 }
 
-function prevPhoto() {
-    currentPhotoIndex = (currentPhotoIndex - 1 + photos.length) % photos.length;
-    showPhoto(currentPhotoIndex);
-}
-
 // Passa as fotos automaticamente a cada 3 segundos
 setInterval(nextPhoto, 3000);
 
